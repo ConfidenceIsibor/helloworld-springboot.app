@@ -14,12 +14,7 @@ pipeline {
         stage('Maven Build') {
             steps {
                 bat 'mvn package'
-            }
-        }
-        stage('Maven Deploy') {
-            steps {
-                echo "Deploy the war file to the server"
-            }    
+            }   
         }
     }
 }
