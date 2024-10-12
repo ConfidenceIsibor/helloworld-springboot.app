@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/ConfidenceIsibor/helloworld-springboot.app.git'
+                git branch: 'feature', url: 'https://github.com/ConfidenceIsibor/helloworld-springboot.app.git'
             }
         }
         stage('Maven Test') {
